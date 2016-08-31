@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-guo",
+  "version": "0.0.1",
+  "description": "my own eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js --fix",
+    "prepublish": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourtion/eslint-config-guo.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "Yourtion Guo <yourtion@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourtion/eslint-config-guo/issues"
+  },
+  "homepage": "https://github.com/yourtion/eslint-config-guo#readme"
+}
