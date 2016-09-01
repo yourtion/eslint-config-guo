@@ -48,7 +48,7 @@ module.exports = {
 需要先安装 插件
 
 ```bash
-$ npm i eslint-plugin-react --save-dev
+$ npm install eslint-plugin-react --save-dev
 ```
 
 然后在项目根目录下新建文件`.eslintrc.js`：
@@ -58,6 +58,27 @@ module.exports = {
   extends: 'guo/react',
 };
 ```
+
+[React 规则](https://www.npmjs.com/package/eslint-plugin-react#list-of-supported-rules)
+
+### React-Native
+
+需要先安装 插件
+
+```bash
+$ npm install eslint-plugin-react --save-dev
+$ npm install eslint-plugin-react-native --save-dev
+```
+
+然后在项目根目录下新建文件`.eslintrc.js`：
+
+```javascript
+module.exports = {
+  extends: 'guo/react-native',
+};
+```
+
+[React-Native 规则](https://www.npmjs.com/package/eslint-plugin-react-native#list-of-supported-rules)
 
 ### 使用
 
