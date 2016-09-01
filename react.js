@@ -16,7 +16,7 @@ module.exports = {
   rules: {
     // React Config
     // Enforce boolean attributes notation in JSX (fixable)
-    'react/jsx-boolean-value': 'warn', 
+    'react/jsx-boolean-value': 'warn',
     // Validate closing bracket location in JSX (fixable)
     'react/jsx-closing-bracket-location': 'warn',
     // Enforce or disallow spaces inside of curly braces in JSX attributes (fixable)

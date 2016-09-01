@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    'react-native'
+    'react-native',
   ],
   rules: {
     'no-use-before-define': 'off',
