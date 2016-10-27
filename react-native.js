@@ -20,6 +20,6 @@ module.exports = {
     'react-native/no-unused-styles': 'error',
     'react-native/split-platform-components': 'error',
     'react-native/no-inline-styles': 'warn',
-    'react-native/no-color-literals': 'off',
+    'react-native/no-color-literals': 'warn',
   },
 };
