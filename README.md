@@ -12,7 +12,7 @@ $ npm install eslint-config-guo --save-dev
 
 在项目根目录下新建文件`.eslintrc.js`：
 
-仅包含 ES6 语法时：
+#### 仅包含 ES6 语法时
 
 ```javascript
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
 };
 ```
 
-包含 ES7 语法时：
+#### 包含 ES7 语法时
 
 ```javascript
 module.exports = {
@@ -30,6 +30,22 @@ module.exports = {
     allowImportExportEverywhere: false,
   },
   extends: 'guo',
+};
+```
+
+#### 包含 Promise 语法时
+
+需要先安装 `eslint-plugin-promise` 插件
+
+```bash
+$ npm install eslint-plugin-promise --save-dev
+```
+
+然后在项目根目录下新建文件`.eslintrc.js`：
+
+```javascript
+module.exports = {
+  extends: 'guo/promise',
 };
 ```
 
@@ -45,7 +61,7 @@ module.exports = {
 
 ### React
 
-需要先安装 插件
+需要先安装 `eslint-plugin-react` 插件
 
 ```bash
 $ npm install eslint-plugin-react --save-dev
@@ -63,7 +79,7 @@ module.exports = {
 
 ### React-Native
 
-需要先安装 插件
+需要先安装 `eslint-plugin-react` 和 `eslint-plugin-react-native` 插件
 
 ```bash
 $ npm install eslint-plugin-react --save-dev
@@ -80,7 +96,7 @@ module.exports = {
 
 [React-Native 规则](https://www.npmjs.com/package/eslint-plugin-react-native#list-of-supported-rules)
 
-### 使用
+## 使用方法
 
 执行以下命令即可：
 
