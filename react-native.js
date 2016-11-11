@@ -12,13 +12,13 @@ module.exports = {
     'react-native',
   ],
   rules: {
-    'no-use-before-define': 'off',
+    'no-use-before-define': 'warn',
     // react
-    'react/jsx-uses-react': 'error',
-    'react/jsx-uses-vars': 'error',
+    'react/jsx-uses-react': 'warn',
+    'react/jsx-uses-vars': 'warn',
     // react native
-    'react-native/no-unused-styles': 'error',
-    'react-native/split-platform-components': 'error',
+    'react-native/no-unused-styles': 'warn',
+    'react-native/split-platform-components': 'warn',
     'react-native/no-inline-styles': 'warn',
     'react-native/no-color-literals': 'warn',
   },
