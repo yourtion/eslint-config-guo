@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-guo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "my own eslint config with ES6 ES7 Promise Mocha React React-Native",
   "main": "index.js",
   "scripts": {
