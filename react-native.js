@@ -1,6 +1,10 @@
 const path = require('path');
 module.exports = {
   extends: path.resolve(__dirname, './index.js'),
+  globals: {
+    'alert': false,
+    'fetch': false,
+  },
   parserOptions: {
     ecmaVersion: 6,
     ecmaFeatures: {
