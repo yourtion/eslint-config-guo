@@ -232,33 +232,8 @@ module.exports = {
     // ------------------------ JSDoc建议的风格 --------------------------------
     'valid-jsdoc': [ 'warn', {
       prefer: {
-        returns: 'return',
         arg: 'param',
         argument: 'param',
-      },
-      preferType: {
-        // JavaScript 内置类型
-        object: 'Object',
-        number: 'Number',
-        boolean: 'Boolean',
-        array: 'Array',
-        string: 'String',
-        function: 'Function',
-        symbol: 'Symbol',
-        mixed: 'Mixed',
-        promise: 'Promise',
-        // 常用类型
-        obj: 'Object',
-        int: 'Number',
-        long: 'Number',
-        float: 'Number',
-        double: 'Number',
-        bool: 'Boolean',
-        char: 'String',
-        str: 'String',
-        fun: 'Function',
-        func: 'Function',
-        fn: 'Function',
       },
       requireReturn: false,
       requireReturnType: true,
