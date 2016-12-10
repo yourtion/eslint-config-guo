@@ -59,6 +59,28 @@ module.exports = {
 };
 ```
 
+### Vue
+
+需要先安装 `eslint-plugin-html` 插件
+
+```bash
+$ npm install eslint-plugin-html --save-dev
+```
+
+然后在项目根目录下新建文件`.eslintrc.js`：
+
+```javascript
+module.exports = {
+  extends: 'guo/vue',
+};
+```
+
+使用 `--ext .vue` 添加对 vue 文件的检查：
+
+```bash
+$ eslint --ext .js,.vue src
+```
+
 ### React
 
 需要先安装 `eslint-plugin-react` 插件
