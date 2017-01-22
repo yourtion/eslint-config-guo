@@ -10,7 +10,7 @@ $ npm install eslint-config-guo --save-dev
 
 ### 配置文件
 
-在项目根目录下新建文件`.eslintrc.js`：
+在项目根目录下新建文件 `.eslintrc.js` ：
 
 #### 仅包含 ES6 语法时
 
@@ -41,7 +41,7 @@ module.exports = {
 $ npm install eslint-plugin-promise --save-dev
 ```
 
-然后在项目根目录下新建文件`.eslintrc.js`：
+然后在项目根目录下新建文件`.eslintrc.js` ：
 
 ```javascript
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
 
 ### mocha
 
-在基于`mocha`框架的单元测试中使用，在`test`目录下新建文件`.eslintrc.js`：
+在基于 `mocha` 框架的单元测试中使用，在 `test` 目录下新建文件 `.eslintrc.js` ：
 
 ```javascript
 module.exports = {
@@ -65,6 +65,12 @@ module.exports = {
 
 ```bash
 $ npm install eslint-plugin-html --save-dev
+```
+
+可能还需要 `babel-eslint` 插件
+
+```bash
+$ npm install babel-eslint --save-dev
 ```
 
 然后在项目根目录下新建文件`.eslintrc.js`：
@@ -123,18 +129,18 @@ module.exports = {
 执行以下命令即可：
 
 ```bash
-$ eslint dir/**.js
+$ eslint dir
 ```
 
 如果需要自动格式化代码，在执行时添加`--fix`选项：
 
 ```bash
-$ eslint dir/**.js --fix
+$ eslint dir --fix
 ```
 
 ## 常见问题
 
-1、如果在使用`babel-eslint`时报错，可能是该模块的 Bug，目前可以通过以下方法解决：
+1、如果在使用 `babel-eslint` 时报错，可能是该模块的 Bug，目前可以通过以下方法解决：
 
 ```javascript
 module.exports = {
@@ -152,11 +158,11 @@ module.exports = {
 };
 ```
 
-2、在使用过程中，可能会遇到一些例外情况，比如需要更改参数对象的属性，可以通过`eslint-disable-next`来临时关闭对下一行的检查：
+2、在使用过程中，可能会遇到一些例外情况，比如需要更改参数对象的属性，可以通过 `eslint-disable-next` 来临时关闭对下一行的检查：
 
 ```javascript
 // eslint-disable-next-line no-param-reassign
 param.xxx = 'ok';
 ```
 
-**注意：任何时候请勿使用`eslint-disable`来关闭`eslint`的检查，如果该备注不能与`eslint-enable`成对出现将会导致余下的程序不能正常获得检查**
+**注意：任何时候请勿使用 `eslint-disable` 来关闭 `eslint` 的检查，如果该备注不能与 `eslint-enable` 成对出现将会导致余下的程序不能正常获得检查**

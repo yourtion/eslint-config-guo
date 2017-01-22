@@ -16,6 +16,9 @@ module.exports = {
     document: false,
     navigator: false,
     window: false,
+    sessionStorage: false,
+    localStorage: false,
+    commit: false,
   },
   plugins: [
     'html',
