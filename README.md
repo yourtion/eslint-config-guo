@@ -124,6 +124,24 @@ module.exports = {
 
 [React-Native 规则](https://www.npmjs.com/package/eslint-plugin-react-native#list-of-supported-rules)
 
+### AVA
+
+需要先安装 `eslint-plugin-ava` 插件
+
+```bash
+$ npm install eslint-plugin-ava --save-dev
+```
+
+然后在项目根目录下新建文件`.eslintrc.js`：
+
+```javascript
+module.exports = {
+  extends: 'guo/ava',
+};
+```
+
+[AVA 规则](https://github.com/avajs/eslint-plugin-ava#rules)
+
 ## 使用方法
 
 执行以下命令即可：
