@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     allowImportExportEverywhere: false,
+    experimentalObjectRestSpread: true,
   },
   rules: {
     // ---------------------------- 强制的风格 -----------------------------------
