@@ -5,9 +5,12 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   parserOptions: {
+    ecmaVersion: 6,
     sourceType: 'module',
     allowImportExportEverywhere: false,
-    experimentalObjectRestSpread: true,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
   },
   rules: {
     // ---------------------------- 强制的风格 -----------------------------------
@@ -229,6 +232,8 @@ module.exports = {
     'object-shorthand': 'warn',
     // 建议可以表达为更简单结构的条件表达式
     'no-unneeded-ternary': 'warn',
+    // 禁止在 case 或 default 子句中出现词法声明
+    'no-case-declarations': 'warn',
 
     // ------------------------ JSDoc建议的风格 --------------------------------
     'valid-jsdoc': [ 'warn', {
