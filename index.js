@@ -5,12 +5,9 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2018,
     sourceType: 'module',
     allowImportExportEverywhere: false,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
   },
   rules: {
     // ---------------------------- 强制的风格 -----------------------------------
